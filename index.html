@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+
+  <body>
+    <header id="home">
+      <div class="text-center header-custom">
+        <h1 class="display-4">Welcome to Project Task Management!</h1>
+        <p class="lead">Managing tasks made easy.</p>
+        <hr class="my-4" />
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: wheat" href="#">Navbar</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse h4" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="details.html">Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="color: wheat;" aria-current="" href="create.html">Creation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="authentication.html">Authentication</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="container-fluid pt-4" id="card-container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div id="card" class="card" style="width: 18rem">
+              <div class="card-header h3">
+                Key Features
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Creation</li>
+                <li class="list-group-item">Registration</li>
+                <li class="list-group-item">Detailing</li>
+                <li class="list-group-item">Dashboard</li>
+                <li class="list-group-item">Authentication</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid" id="figure-container">
+      <figure>
+        <blockquote class="blockquote">
+          <p>I must govern the clock, not be governed by it.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: rgb(255, 230, 183);">
+          Golda Meir
+        </figcaption>
+      </figure>
+  
+      <figure>
+        <blockquote class="blockquote">
+          <p>Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: rgb(255, 230, 183);">
+          Abraham Lincoln
+        </figcaption>
+      </figure>
+  
+      <figure>
+        <blockquote class="blockquote">
+          <p>Don't wait. The time will never be just right.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: rgb(255, 230, 183);">
+          Napoleon Hill
+        </figcaption>
+      </figure>
+  
+  
+      <figure >
+        <blockquote class="blockquote" >
+          <p>Concentrate all your thoughts upon the work in hand.
+            The sun's rays do not burn until brought to a focus.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: rgb(255, 230, 183);">
+          Alexander Graham Bell
+        </figcaption>
+      </figure>
+  
+      <figure>
+        <blockquote class="blockquote">
+          <p>The best way to get a project done faster is to start
+            sooner.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: rgb(255, 230, 183);">
+          Jim Highsmith
+        </figcaption>
+      </figure>
+  
+      <figure>
+        <blockquote class="blockquote">
+          <p>Trying to manage a project without project management is
+             like trying to play a football game without a game plan.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color: rgb(255, 230, 183);">
+          Karen Tate
+        </figcaption>
+      </figure>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="mb-0">© 2024 Alton Smith II. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+        var forms = document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
