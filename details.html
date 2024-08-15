@@ -1,0 +1,244 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="details.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="text-center header-custom">
+        <h1 class="display-4">Details</h1>
+        <hr class="my-4" />
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: wheat" href="#">Navbar</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse h4" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: wheat"
+                aria-current=""
+                href="create.html"
+                >Creation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="register.html"
+                >Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: wheat"
+                href="authentication.html"
+                >Authentication</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="card">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Task Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            placeholder="Enter Title"
+            required
+          />
+          
+          <div class="invalid-feedback">Please enter a title.</div>
+        </div>
+
+
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Assigned To</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="Enter Personal"
+              required
+            />
+            <div class="invalid-feedback">Please enter a name.</div>
+          </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Due Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="validationCustom02"
+            required
+          />
+          <div class="invalid-feedback">Please enter a date.</div>
+        </div>
+
+        <div class="col-md-2">
+          <label for="validationCustomDropdown1" class="form-label"
+            >Priority Level</label
+          >
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Priority
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Low</a></li>
+              <li><a class="dropdown-item" href="#">Medium</a></li>
+              <li><a class="dropdown-item" href="#">High</a></li>
+              <li><a class="dropdown-item" href="#">Urgent</a></li>
+            </ul>
+          </div>
+          <div class="invalid-feedback">Please provide priority level.</div>
+        </div>
+
+        <div class="col-md-2">
+            <label for="validationCustomDropdown2" class="form-label"
+              >Sector</label
+            >
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Sector
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">S1</a></li>
+                <li><a class="dropdown-item" href="#">S2</a></li>
+                <li><a class="dropdown-item" href="#">S3</a></li>
+                <li><a class="dropdown-item" href="#">S4</a></li>
+                <li><a class="dropdown-item" href="#">S5</a></li>
+                <li><a class="dropdown-item" href="#">S6</a></li>
+                <li><a class="dropdown-item" href="#">N/A</a></li>
+              </ul>
+            </div>
+            <div class="invalid-feedback">Please provide Sector.</div>
+          </div>
+
+
+        <div class="col-md-2">
+        <label for="validationCustomDropdown3" class="form-label"
+            >Status</label
+        >
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                Status
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+            <li><a class="dropdown-item" href="#">Not Started</a></li>
+            <li><a class="dropdown-item" href="#">In Progress</a></li>
+            <li><a class="dropdown-item" href="#">Completed</a></li>
+            </ul>
+        </div>
+        <div class="invalid-feedback">Please provide Status level.</div>
+        </div>  
+
+
+        <div class="col-md-2">
+            <label for="validationCustomDropdown4" class="form-label"
+                >Status</label
+            >
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                <li><a class="dropdown-item" href="#">Combat Operations</a></li>
+                <li><a class="dropdown-item" href="#">Logistics and Supply</a></li>
+                <li><a class="dropdown-item" href="#">Intelligence and Reconnaissance</a></li>
+                <li><a class="dropdown-item" href="#">Training and Development</a></li>
+                </ul>
+            </div>
+            <div class="invalid-feedback">Please provide Status level.</div>
+            </div>  
+
+
+
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Comments</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom03"
+            required
+          />
+          <div class="invalid-feedback">Please provide comments.</div>
+        </div>
+
+
+        <div class="col-md-12">
+          <label for="validationCustom05" class="form-label">Description</label>
+          <textarea 
+          name="validationCustom05" 
+          id="validationCustom05" 
+          placeholder="Enter Description"
+          required >
+
+          </textarea>
+          <div class="invalid-feedback">Please provide a Description.</div>
+        </div>
+
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+
+
+    <script>
+        (function () {
+          "use strict";
+          var forms = document.querySelectorAll(".needs-validation");
+          Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener(
+              "submit",
+              function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+              },
+              false
+            );
+          });
+        })();
+      </script>
+
+
+
+  </body>
+</html>
