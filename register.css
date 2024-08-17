@@ -1,0 +1,96 @@
+html, body {
+height: 100%; /* Ensure the body takes up the full viewport height */
+margin: 0; /* Remove default margin */
+display: flex;
+flex-direction: column; /* Stack header, content, and footer vertically */
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+.footer {
+background-color: #4a4a4a;
+color: wheat;
+padding: 1rem;
+display: flex;
+align-items: end; /* Align content to the bottom */
+justify-content: center; /* Center content horizontally */
+text-align: center;
+margin-top: auto;
+}
+
+.footer:hover {
+text-decoration: underline;
+}
+
+.navbar-custom {
+background-color: #4a4a4a;
+}
+
+.nav-item {
+transition: ease 0.3s;
+}
+
+.nav-item:hover {
+transform: scale(1.45);
+}
+
+.header-custom {
+background-color: #83add8;
+padding: 2rem;
+border-radius: 2rem;
+}
+
+blockquote {
+font-style: italic;
+padding-top: 2px;
+}
+
+figcaption {
+font-weight: 800;
+letter-spacing: 0.6rem;
+padding-bottom: 8px;
+}
+
+#card {
+background-color: #83add8;
+border: #4a4a4a solid 2px;
+border-radius: 10px;
+text-align: center;
+}
+
+#card-container {
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+flex-grow: 1;
+background-color: #83add8;
+}
+
+.list-group-item:nth-child(odd) {
+background-color: #4a4a4a; /* Darker background for odd items */
+color: wheat; /* Ensure text is readable on dark background */
+}
+
+.list-group-item:nth-child(even) {
+background-color: #6e9cd8; /* Slightly lighter color for even items */
+color: #4a4a4a; /* Ensure text is readable on lighter background */
+}
+
+.list-group-item {
+transition: 0.3s ease;
+}
+
+.list-group-item:hover {
+transform: scale(1.11);
+}
+
+#figure-container {
+background-color: #83add8;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+flex-grow: 1;
+}
