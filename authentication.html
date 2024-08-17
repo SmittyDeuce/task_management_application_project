@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="authentication.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="text-center header-custom">
+        <h1 class="display-4">Authentication</h1>
+        <p class="lead">Secure login to your account.</p>
+        <hr class="my-4" />
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: wheat" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse h4" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100"
+          >
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="details.html"
+                >Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: wheat" href="create.html"
+                >Create Task</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: wheat"
+                aria-current="page"
+                href="register.html"
+                >Registration</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card" id="card">
+            <div class="card-body">
+              <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Enter Username"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a username.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Enter Password"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a password.</div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="mb-0">© 2024 Alton Smith II. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+        var forms = document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
